@@ -1,4 +1,4 @@
-package Project;
+package com.miniproject.contact;
 
 public class ContactMain {
 

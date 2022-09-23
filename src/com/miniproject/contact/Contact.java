@@ -1,6 +1,7 @@
-package Project;
+package com.miniproject.contact;
 
 public class Contact {
+	
 	//field
 	private String name;
 	private String phoneNumber; //숫자로 받아서 포맷 할수도 있음
@@ -8,12 +9,8 @@ public class Contact {
 	private String address;
 	private String birthday;
 	private String group;
-	
-	//생성자-기본
-	Contact(){	
-	}
-	
-	//생성자
+		
+	//constructor
 	Contact(String name, String PhoneNumber, String mail, String address, String birthday, String group){
 		this.name = name;
 		this.phoneNumber = PhoneNumber;
@@ -66,16 +63,6 @@ public class Contact {
 		this.group = group;
 	}
 	
-	//setter-틀린듯 사용자 정보 입력, 매개 변수 활용????
-//	void setInfo(String name, String number, String mail, String adress, String birthday, String group) {
-//		this.name = name;
-//		this.number = number;
-//		this.mail = mail;
-//		this.adress = address;
-//		this.birthday = birthday;
-//		this.group = group;
-//	}
-	
 	//Method-그룹 정보 변경
 	void changeGroupInfo() {
 		if(group.equals("가족")) {
@@ -84,9 +71,7 @@ public class Contact {
 			group = "가족";
 		}
 	}
-	
-	//Method-어레이 리스트에 직접 입력받기
-	
+
 	//Method-정보 출력
 	void printInfo() {
 		System.out.println("이름: " + name);
@@ -98,7 +83,5 @@ public class Contact {
 	}
 }
 
-class SmartPhone2 {
-	
-}
+
 
