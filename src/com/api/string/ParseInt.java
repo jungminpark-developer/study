@@ -3,9 +3,9 @@ package com.api.string;
 public class ParseInt {
 
 	public static void main(String[] args) {
-		//문자열을 정수로 반환
+		//문자열을 정수로 반환-Excel value 함수와 비슷함
 		
-		String word = "-12345ㅋ";
+		String word = "-12345";
 		
 		try {
 			int number = Integer.parseInt(word);
