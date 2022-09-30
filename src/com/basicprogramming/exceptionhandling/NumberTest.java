@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class NumberTest {
 
 	public static void main(String[] args){
+		//참고: https://iwbtbitj.tistory.com/44
 		
 		try {
 			//키보드로 숫자 입력 받기
