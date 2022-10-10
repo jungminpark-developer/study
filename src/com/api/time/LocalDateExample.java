@@ -13,6 +13,9 @@ public class LocalDateExample {
 		System.out.println(date.getDayOfMonth());
 		System.out.println(date.getDayOfWeek());
 		System.out.println(date.getDayOfYear());
+		
+		int year = date.getYear();
+		System.out.println(year);
 			
 	}
 }
