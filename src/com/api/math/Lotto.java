@@ -3,22 +3,24 @@ package com.api.math;
 public class Lotto {
 
 	public static void main(String[] args) {
-		//ì¤‘ë³µë˜ì§€ ì•ŠëŠ” ìˆ«ì ë½‘ê¸°-ê±°ì˜ ì™„ì„±
+		//·Î¶Ç-Math.randomÀ» È°¿ëÇÑ Áßº¹µÇÁö ¾Ê´Â ¹øÈ£ »Ì±â
 		int[] lottoList = new int[6];
-
+		
+		System.out.println("·Î¶Ç ´çÃ·¹øÈ£");
+		
 		for(int i=0; i<lottoList.length; i++) {
 						
 			lottoList[i] = (int)(Math.random()*6)+1;
 			
 			for(int j=0; j<i; j++) {
+				//»õ·Î »ÌÀº ¼ıÀÚ°¡ ±âÁ¸ ¹è¿­¿¡ Áßº¹ µÆ´ÂÁö °Ë»ö
 				while(lottoList[i] == lottoList[j]) {
 					lottoList[i] =  (int)(Math.random()*6)+1;
-					j=0;
+					j=0; //´Ù½Ã »ÌÀº ¼ıÀÚ¸¦ 0¹ø ÀÎµ¦½ººÎÅÍ Àç°Ë»öÇÏ±â À§ÇØ j¸¦ 0À¸·Î ÃÊ±âÈ­
 				}	
 			}
-			System.out.println(lottoList[i]);
-
+			System.out.println(i+1+"¹ø °ø: "+lottoList[i]);
 		}
-	
+
 	}
 }
