@@ -1,6 +1,6 @@
 package com.api.string;
 
-public class indexOf {
+public class IndexOf {
 
 	public static void main(String[] args) {
 		//221012 문자열 API-문자열 시작 위치 찾기
