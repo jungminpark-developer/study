@@ -15,6 +15,10 @@ public class CharAt {
 		char c = word.charAt(2);
 		System.out.println(c);
 		
+		String subject = "자바 프로그래밍";
+		char charValue = subject.charAt(3);
+		System.out.println(charValue);
+
 		/* 오류-index out of range: 3, 인덱스가 범위를 벗어남
 		char d = word.charAt(3);
 		System.out.println(d);
