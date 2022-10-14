@@ -1,7 +1,7 @@
 package codingtest;
 
 public class DividePizza1 {
-
+		//피자 나눠 먹기 (1)-프로그래머스 0단계
 		public int solution(int n) {
 			int answer = 1;
 
@@ -13,7 +13,7 @@ public class DividePizza1 {
 	    }
 	
 	public static void main(String[] args) {
-		//피자 나눠 먹기 (1)-프로그래머스 0단계
+		//실행
 		DividePizza1 test = new DividePizza1();
 		
 		System.out.println("2명이 최소 한조각씩 먹기 위해서 최소 "+test.solution(2)+"판이 필요합니다.");

@@ -3,6 +3,7 @@ package codingtest;
 public class ArrayStringLength {
 	
 	public int[] solution(String[] strlist) {
+		
 		int[] answer = {};
 
 		for(int i=0; i<strlist.length; i++){
@@ -19,7 +20,7 @@ public class ArrayStringLength {
 
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//½ÇÇà
 		ArrayStringLength test = new ArrayStringLength();
 		String[] strlist = {"We", "are", "the", "world!"};
 		
