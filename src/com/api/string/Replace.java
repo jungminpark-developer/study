@@ -8,5 +8,9 @@ public class Replace {
 		word = word.replace("웹", "Web");
 		System.out.println(word);
 		
+		String word2 = "글자하나V없애기";
+		word2 = word2.replace("V", "");
+		System.out.println(word2);
+		
 	}
 }
