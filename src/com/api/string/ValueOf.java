@@ -13,5 +13,9 @@ public class ValueOf {
 			System.out.println("형식변환 오류입니다.");
 		}	
 		
+		int a = 29;
+		String word2 = String.valueOf(a);
+		System.out.println(word2);
+		
 	}
 }

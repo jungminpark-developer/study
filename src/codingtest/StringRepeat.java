@@ -4,7 +4,7 @@ public class StringRepeat {
 	
 	public String solution(String my_string, int n) {
 		//문자 반복 출력하기-프로그래머스 0단계
-		//첫 시도-split 풀이
+		//1. split
 		String[] array = my_string.split("");
 		String answer = "";
 		
@@ -14,7 +14,7 @@ public class StringRepeat {
 			}
 		}
 		
-		/*다른 사람의 풀이 보고 charAt으로 변경하여 풀이
+		/* 2. 다른 사람의 풀이 보고 charAt으로 풀이
 		for(int i=0; i<my_string.length(); i++) {
 			for(int j=0; j<n; j++) {
 				answer += my_string.charAt(i);

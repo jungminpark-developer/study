@@ -7,7 +7,7 @@ public class CharAt {
 		
 		String word = "pjm";
 		char a = word.charAt(0);
-		System.out.println(a);
+		System.out.println(""+a+a);
 		
 		char b = word.charAt(1);
 		System.out.println(b);
