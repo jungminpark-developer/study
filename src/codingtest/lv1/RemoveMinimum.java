@@ -18,7 +18,7 @@ public class RemoveMinimum {
         //아니라면 제일 작은 수 제거하고 종료
         }else {
          
-            //배열 탐색 후최소값 구하기
+            //배열 탐색 후 최소값 구하기
             for(i=0; i<arr.length; i++) {
             	if(min > arr[i]) {
             		min = arr[i];
