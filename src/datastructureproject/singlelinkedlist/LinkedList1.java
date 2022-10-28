@@ -1,6 +1,7 @@
 package datastructureproject.singlelinkedlist;
 
 public class LinkedList1 {
+	//참고-https://wookyungjin.tistory.com/9
 	//field
 	private ListNode head;
 	
@@ -17,12 +18,21 @@ public class LinkedList1 {
 	}
 	
 	public void insertLastNode(String data) {
+		//원리 파악 중
 		ListNode newNode = new ListNode(data);
 		
-		if(newNode != null) {
-			newNode.link = head;
+		if(head == null) {
+//			newNode.link = head;
+			head = newNode;
+		}else {
+			ListNode temp = head;
+			
+			while(temp.link != null) {
+				temp = temp.link;
+			}
+			
+			temp.link = newNode;
 		}
-		head = newNode;
 		
 	}
 	public void printList() {
