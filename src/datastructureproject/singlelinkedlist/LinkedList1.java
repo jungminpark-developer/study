@@ -18,7 +18,7 @@ public class LinkedList1 {
 	}
 	
 	public void insertLastNode(String data) {
-		//원리 파악 중
+		//원리 파악 중 ㅎㅎ 한글 깨짐도 수정해야함
 		ListNode newNode = new ListNode(data);
 		
 		if(head == null) {
