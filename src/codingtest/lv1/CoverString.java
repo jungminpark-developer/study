@@ -13,6 +13,19 @@ public class CoverString {
 		answer = phone_number.replace(phone_number.substring(0,phone_number.length()-4), asterisk);
 		
 		return answer;
+		
+		/*
+		//다른 사람의 풀이 보고 추가 공부
+		String answer = "";
+		
+		for(int i=0; i < phone_number.length()-4; i++) {
+			answer += "*";
+		}
+		
+		answer += phone_number.substring(phone_number.length()-4);
+
+		return answer;
+		*/
 	}
 	
 	public static void main(String[] args) {
