@@ -3,7 +3,7 @@ package com.api.string;
 public class ValueOf {
 
 	public static void main(String[] args) {
-		//문자열을 object로 반환-Excel value 함수와 비슷함
+		//입력받은 값을 object로 반환-Excel value 함수와 비슷함
 		String word = "221104";
 		
 		try {
