@@ -7,8 +7,8 @@ public class FindHiddenNumber {
 		int answer = 0;
 		char[] array = my_string.toCharArray();
 
-		for(int i = 0; i < array.length; i++) {
-			if(array[i] < 65) {
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] < 65) {
 				System.out.println(array[i]);
 				answer += Character.getNumericValue(array[i]); // array[i]¿¡¼­ '0' or 48À» »©µµµÊ
 			}
@@ -18,7 +18,7 @@ public class FindHiddenNumber {
 	}
 
 	public static void main(String[] args) {
-		//½ÇÇà
+		// ½ÇÇà
 		FindHiddenNumber test = new FindHiddenNumber();
 		test.solution("aAb1B2C34oOp");
 	}

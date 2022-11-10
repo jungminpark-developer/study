@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class OddEven {
 
 	public int[] solution(int[] num_list) {
-		//ì§ìˆ˜ í™€ìˆ˜ ê°œìˆ˜-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
+		// Â¦¼ö È¦¼ö °³¼ö-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
 		int[] answer = new int[2];
 		int countEven = 0;
 		

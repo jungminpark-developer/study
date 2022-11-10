@@ -1,27 +1,25 @@
 package codingtest.lv0;
 
 public class ArrayFilp {
-	
+
 	public int[] solution(int[] num_list) {
-		//ë°°ì?? ?¤ì?ê¸?-??ë¡?ê·¸ë??ë¨¸ì?? 0?¨ê?
-		//ì²? ????
+		// ¹è¿­ µÚÁý±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// Ã¹ Ç®ÀÌ
 		int[] answer = new int[num_list.length];
 		int j = 0;
 
-		for(int i=num_list.length-1; i>=0; i--){
+		for (int i = num_list.length - 1; i >= 0; i--) {
 			answer[j] = num_list[i];
 			j++;
 		}
 
 		return answer;
-		
-		/*???? ???? ?°ë?¼ì?ê¸?
-		int[] answer = new int[num_list.length];
-		
-		for(int i=0; i<num_list.length; i++) {
-			answer[i] = num_list[num_list.length-i-1];
-		}
-		return answer;
-		*/
+
+		/*
+		 * ´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌº¸°í Ãß°¡ °øºÎ int[] answer = new int[num_list.length];
+		 * 
+		 * for(int i=0; i<num_list.length; i++) {answer[i] =
+		 * num_list[num_list.length-i-1]; } return answer;
+		 */
 	}
 }

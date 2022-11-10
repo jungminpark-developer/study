@@ -9,8 +9,8 @@ public class Game369 {
 
 		char[] array = number.toCharArray();
 
-		for(int i = 0; i < array.length; i++) {
-			if(array[i] == '3' || array[i] == '6' || array[i] == '9') {
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] == '3' || array[i] == '6' || array[i] == '9') {
 				answer++;
 			}
 		}

@@ -6,12 +6,12 @@ public class FindSeven {
 		// 7의 개수-프로그래머스 0단계
 		int answer = 0;
 
-		for(int i = 0; i < array.length; i++) {
+		for (int i = 0; i < array.length; i++) {
 			int divisorNumber = 10; // 나누는 수, 제수
 			int remainder = 7; // 나머지
 
-			while(array[i] * 10 >= divisorNumber) {
-				if(array[i] % divisorNumber == remainder) {
+			while (array[i] * 10 >= divisorNumber) {
+				if (array[i] % divisorNumber == remainder) {
 					answer++;
 				}
 				array[i] -= array[i] % divisorNumber;
