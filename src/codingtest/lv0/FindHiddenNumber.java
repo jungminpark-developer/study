@@ -3,22 +3,22 @@ package codingtest.lv0;
 public class FindHiddenNumber {
 
 	public int solution(String my_string) {
-		//ìˆ¨ì–´ìˆëŠ” ìˆ«ìì˜ ë§ì…ˆ(1)-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
+		// ¼û¾îÀÖ´Â ¼ıÀÚÀÇ µ¡¼À(1)-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
 		int answer = 0;
 		char[] array = my_string.toCharArray();
-		
-		for(int i=0; i<array.length; i++) {
-			if(array[i]<65) {
+
+		for(int i = 0; i < array.length; i++) {
+			if(array[i] < 65) {
 				System.out.println(array[i]);
-				answer += Character.getNumericValue(array[i]); //array[i]ì—ì„œ '0' or 48ì„ ë¹¼ë„ë¨ 
+				answer += Character.getNumericValue(array[i]); // array[i]¿¡¼­ '0' or 48À» »©µµµÊ
 			}
 		}
-		
+
 		return answer;
 	}
-	
+
 	public static void main(String[] args) {
-		//ì‹¤í–‰
+		//½ÇÇà
 		FindHiddenNumber test = new FindHiddenNumber();
 		test.solution("aAb1B2C34oOp");
 	}
