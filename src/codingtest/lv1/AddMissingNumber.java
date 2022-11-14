@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class AddMissingNumber {
 
 	public int solution(int[] numbers) {
-		// ¾ø´Â ¼ıÀÚ ´õÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ì—†ëŠ” ìˆ«ì ë”í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		int total = 0;
 		ArrayList<Integer> numberGroup = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
 
@@ -26,7 +26,7 @@ public class AddMissingNumber {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		AddMissingNumber test = new AddMissingNumber();
 		int[] array = { 5, 8, 4, 0, 6, 7, 9 };
 		System.out.print(test.solution(array));
