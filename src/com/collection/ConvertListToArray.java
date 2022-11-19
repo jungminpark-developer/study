@@ -34,7 +34,9 @@ public class ConvertListToArray {
 			System.out.println(array2[i]);
 		}
 
-//		(3)toArray()-primitive type은 사용 불가
+		// 3. stream().mapToInt() 로 하는 방법이 있는듯하니 추가 공부하기
+		
+//		toArray()-primitive type은 사용 불가
 //		int[] array = arrayList.toArray(new int[arrayList.size()]);
 
 	}
