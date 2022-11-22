@@ -3,20 +3,20 @@ package codingtest.lv0;
 public class TriangleSides {
 
 	public int solution(int[] sides) {
-		// »ï°¢ÇüÀÇ ¿Ï¼º Á¶°Ç-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì‚¼ê°í˜•ì˜ ì™„ì„± ì¡°ê±´-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int max = 0;
 		int Side = 0;
 
-		// °¡Àå Å« º¯ ÀúÀå
+		// ê°€ì¥ í° ë³€ ì €ì¥
 		for (int i = 0; i < sides.length; i++) {
 			if (sides[i] >= max) {
 				max = sides[i];
 			}
-			Side += sides[i]; // ¼¼ º¯ÀÇ ÇÕ ÀúÀå
+			Side += sides[i]; // ì„¸ ë³€ì˜ í•© ì €ì¥
 		}
 
-		// °á°ú ¸®ÅÏ
-		if (max < Side - max) { // °¡Àå Å« º¯ < ¼¼ º¯ÀÇ ÇÕ-°¡Àå Å« º¯=µÎ º¯ÀÇ ÇÕ
+		// ê²°ê³¼ ë¦¬í„´
+		if (max < Side - max) { // ê°€ì¥ í° ë³€ < ì„¸ ë³€ì˜ í•©-ê°€ì¥ í° ë³€=ë‘ ë³€ì˜ í•©
 			return 1;
 		} else {
 			return 2;
@@ -24,10 +24,9 @@ public class TriangleSides {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		TriangleSides test = new TriangleSides();
 		int[] tryAngle = { 3, 3, 3 };
-
 		System.out.println(test.solution(tryAngle));
 	}
 }

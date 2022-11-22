@@ -1,12 +1,12 @@
 package codingtest.lv0;
 
-public class ArrayMaxValueAndIndex {
+public class GetMaxNumber {
 
 	public int[] solution(int[] array) {
-		// °¡Àå Å« ¼ö Ã£±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ê°€ì¥ í° ìˆ˜ ì°¾ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int[] answer = new int[2];
 
-		for (int i = 0; i < array.length; i++) { // intÀÇ default°ªÀº 0
+		for (int i = 0; i < array.length; i++) { // intì˜ defaultê°’ì€ 0
 			if (array[i] >= answer[0]) {
 				answer[0] = array[i];
 				answer[1] = i;
@@ -16,7 +16,7 @@ public class ArrayMaxValueAndIndex {
 		return answer;
 
 		/*
-		 * Ã¹ Ç®ÀÌ ÄÚµå int[] answer = new int[2]; int max=0; int index=0;
+		 * ì²« í’€ì´ ì½”ë“œ int[] answer = new int[2]; int max=0; int index=0;
 		 * 
 		 * for(int i=0; i<array.length; i++) { if(array[i] >= max) { max = array[i];
 		 * index = i; } }

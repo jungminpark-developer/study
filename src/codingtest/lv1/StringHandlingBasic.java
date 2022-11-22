@@ -3,7 +3,7 @@ package codingtest.lv1;
 public class StringHandlingBasic {
 
 	public boolean solution(String s) {
-		// ¹®ÀÚ¿­ ´Ù·ç±â ±âº»-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ë¬¸ìì—´ ë‹¤ë£¨ê¸° ê¸°ë³¸-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		if (s.length() == 4 || s.length() == 6) {
 			for (int i = 0; i < s.length(); i++) {
 				if (s.charAt(i) >= 65) {
@@ -17,7 +17,7 @@ public class StringHandlingBasic {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		StringHandlingBasic test = new StringHandlingBasic();
 		System.out.print(test.solution("1234"));
 	}

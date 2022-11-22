@@ -3,14 +3,28 @@ package codingtest.lv1;
 public class SumOfBetweenAandB {
 
 	public long solution(int a, int b) {
-		// µÎ Á¤¼ö »çÀÌÀÇ ÇÕ-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ë‘ ì •ìˆ˜ ì‚¬ì´ì˜ í•©-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		long answer = 0;
+
+		if (a == b) {
+			return a;
+		}
+
+		if (a > b) {
+			for (int i = b; i <= a; i++) {
+				answer += i;
+			}
+		} else {
+			for (int i = a; i <= b; i++) {
+				answer += i;
+			}
+		}
 
 		return answer;
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		SumOfBetweenAandB test = new SumOfBetweenAandB();
 		System.out.print(test.solution(3, 5));
 

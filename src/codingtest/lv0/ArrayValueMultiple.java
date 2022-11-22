@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class ArrayValueMultiple {
 
 	public int[] solution(int[] numbers) {
-		// ¹è¿­ µÎ ¹è ¸¸µé±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ë°°ì—´ ë‘ ë°° ë§Œë“¤ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int[] answer = new int[numbers.length];
 
 		for (int i = 0; i < numbers.length; i++) {

@@ -1,9 +1,9 @@
 package codingtest.lv0;
 
-public class StringFlip {
+public class ReverseString {
 
 	public String solution(String my_string) {
-		// ¹®ÀÚ¿­ µÚÁý±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ë¬¸ìžì—´ ë’¤ì§‘ê¸°-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		String answer = "";
 
 		for (int i = my_string.length() - 1; i >= 0; i--) {
@@ -14,8 +14,8 @@ public class StringFlip {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
-		StringFlip test = new StringFlip();
+		// ì‹¤í–‰
+		ReverseString test = new ReverseString();
 		System.out.println(test.solution("abcde"));
 
 		String a = "abcde";

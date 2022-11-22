@@ -2,12 +2,12 @@ package codingtest.lv1;
 
 public class BubbleSort {
 	public String solution(String s) {
-		// ¹®ÀÚ¿­ ³»¸²Â÷¼øÀ¸·Î ¹èÄ¡ÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ë¬¸ìì—´ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ë°°ì¹˜í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		String answer = "";
 		char[] array = s.toCharArray();
-		char temp = ' '; // µ¥ÀÌÅÍ¸¦ ±³È¯ÇÏ±â À§ÇÑ ÀÓ½Ã ÀúÀå¼Ò
+		char temp = ' '; // ë°ì´í„°ë¥¼ êµí™˜í•˜ê¸° ìœ„í•œ ì„ì‹œ ì €ì¥ì†Œ
 
-		// ¹öºí Á¤·Ä »ç¿ë
+		// ë²„ë¸” ì •ë ¬ ì‚¬ìš©
 		for (int i = 0; i < array.length - 1; i++) {
 			for (int j = 0; j < array.length - (i + 1); j++) {
 				if (array[j] < array[j + 1]) {

@@ -3,7 +3,7 @@ package codingtest.lv1;
 public class ConditionalCalcul {
 
 	public long solution(int price, int money, int count) {
-		// ºÎÁ·ÇÑ ±Ý¾× °è»êÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ë¶€ì¡±í•œ ê¸ˆì•¡ ê³„ì‚°í•˜ê¸°-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		long answer = 0;
 
 		for (int i = 1; i <= count; i++) {
@@ -16,11 +16,5 @@ public class ConditionalCalcul {
 			return answer - money;
 		}
 
-	}
-
-	public static void main(String[] args) {
-		// ½ÇÇà
-		ConditionalCalcul test = new ConditionalCalcul();
-		System.out.println(test.solution(3, 20, 4));
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class GetMedian {
 
 	public int solution(int[] array) {
-		// Áß¾Ó°ª ±¸ÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì¤‘ì•™ê°’ êµ¬í•˜ê¸°-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int answer = 0;
 		Arrays.sort(array);
 		answer = array.length / 2;

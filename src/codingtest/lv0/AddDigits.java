@@ -3,9 +3,9 @@ package codingtest.lv0;
 public class AddDigits {
 
 	public int solution(int n) {
-		// ÀÚ¸´¼ö ´õÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ìžë¦¿ìˆ˜ ë”í•˜ê¸°-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 
-		// 1. ¼ýÀÚ>¹®ÀÚ¿­>¼ýÀÚ º¯È¯À¸·Î Ç®ÀÌ
+		// 1. ìˆ«ìž>ë¬¸ìžì—´>ìˆ«ìž ë³€í™˜ìœ¼ë¡œ í’€ì´
 		int answer = 0;
 		String numberString = String.valueOf(n);
 
@@ -15,7 +15,7 @@ public class AddDigits {
 		return answer;
 
 		/*
-		 * 2. ¼ýÀÚ·Î Ç®ÀÌ int answer2 = 0;
+		 * 2. ìˆ«ìžë¡œ í’€ì´ int answer2 = 0;
 		 * 
 		 * while(n > 0) { answer2 += n % 10; n /= 10; }
 		 * 
@@ -24,7 +24,7 @@ public class AddDigits {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		AddDigits test = new AddDigits();
 		System.out.println(test.solution(1234));
 	}

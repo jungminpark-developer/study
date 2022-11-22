@@ -1,9 +1,9 @@
 package codingtest.lv0;
 
 public class DividePizza1 {
-	
+
 	public int solution(int n) {
-		// ÇÇÀÚ ³ª´² ¸Ô±â (1)-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// í”¼ì ë‚˜ëˆ  ë¨¹ê¸° (1)-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int answer = 1;
 
 		while (7 * answer < n) {
@@ -14,13 +14,13 @@ public class DividePizza1 {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		DividePizza1 test = new DividePizza1();
 
-		System.out.println("2¸íÀÌ ÃÖ¼Ò ÇÑÁ¶°¢¾¿ ¸Ô±â À§ÇØ¼­ ÃÖ¼Ò " + test.solution(2) + "ÆÇÀÌ ÇÊ¿äÇÕ´Ï´Ù.");
-		System.out.println("11¸íÀÌ ÃÖ¼Ò ÇÑÁ¶°¢¾¿ ¸Ô±â À§ÇØ¼­ ÃÖ¼Ò " + test.solution(11) + "ÆÇÀÌ ÇÊ¿äÇÕ´Ï´Ù.");
-		System.out.println("21¸íÀÌ ÃÖ¼Ò ÇÑÁ¶°¢¾¿ ¸Ô±â À§ÇØ¼­ ÃÖ¼Ò " + test.solution(21) + "ÆÇÀÌ ÇÊ¿äÇÕ´Ï´Ù.");
-		System.out.println("22¸íÀÌ ÃÖ¼Ò ÇÑÁ¶°¢¾¿ ¸Ô±â À§ÇØ¼­ ÃÖ¼Ò " + test.solution(22) + "ÆÇÀÌ ÇÊ¿äÇÕ´Ï´Ù.");
+		System.out.println("2ëª…ì´ ìµœì†Œ í•œì¡°ê°ì”© ë¨¹ê¸° ìœ„í•´ì„œ ìµœì†Œ " + test.solution(2) + "íŒì´ í•„ìš”í•©ë‹ˆë‹¤.");
+		System.out.println("11ëª…ì´ ìµœì†Œ í•œì¡°ê°ì”© ë¨¹ê¸° ìœ„í•´ì„œ ìµœì†Œ " + test.solution(11) + "íŒì´ í•„ìš”í•©ë‹ˆë‹¤.");
+		System.out.println("21ëª…ì´ ìµœì†Œ í•œì¡°ê°ì”© ë¨¹ê¸° ìœ„í•´ì„œ ìµœì†Œ " + test.solution(21) + "íŒì´ í•„ìš”í•©ë‹ˆë‹¤.");
+		System.out.println("22ëª…ì´ ìµœì†Œ í•œì¡°ê°ì”© ë¨¹ê¸° ìœ„í•´ì„œ ìµœì†Œ " + test.solution(22) + "íŒì´ í•„ìš”í•©ë‹ˆë‹¤.");
 
 	}
 }

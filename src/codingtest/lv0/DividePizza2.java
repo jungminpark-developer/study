@@ -1,9 +1,10 @@
 package codingtest.lv0;
 
 public class DividePizza2 {
+	
 	public int solution(int n) {
-		// ÇÇÀÚ ³ª´² ¸Ô±â(2)-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
-		int answer = 1; // 1ÆÇºÎÅÍ ½ÃÀÛ
+		// í”¼ì ë‚˜ëˆ  ë¨¹ê¸°(2)-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
+		int answer = 1; // 1íŒë¶€í„° ì‹œì‘
 
 		while ((answer * 6) % n != 0) {
 			answer++;

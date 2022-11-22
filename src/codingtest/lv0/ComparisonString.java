@@ -5,22 +5,23 @@ import java.util.Arrays;
 public class ComparisonString {
 
 	public int solution(String before, String after) {
-		//A·Î B ¸¸µé±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// Aë¡œ B ë§Œë“¤ê¸°-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		char[] beforeArray = before.toCharArray();
 		Arrays.sort(beforeArray);
 		char[] afterArray = after.toCharArray();
 		Arrays.sort(afterArray);
-		
-		for(int i=0; i<before.length(); i++) {
-			if(beforeArray[i] != afterArray[i]) {
+
+		for (int i = 0; i < before.length(); i++) {
+			if (beforeArray[i] != afterArray[i]) {
 				return 0;
 			}
 		}
-		
+
 		return 1;
 	}
+
 	public static void main(String[] args) {
-		//½ÇÇà
+		// ì‹¤í–‰
 		ComparisonString test = new ComparisonString();
 		System.out.print(test.solution("olleh", "hello"));
 

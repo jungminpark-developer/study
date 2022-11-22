@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class CountK {
 
 	public int solution(int i, int j, int k) {
-		// kÀÇ °³¼ö-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// kì˜ ê°œìˆ˜-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int answer = 0;
 		String word = "";
 		String[] wordArray;

@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class GetOddNumber {
 
 	public int[] solution(int n) {
-		// Â¦¼ö´Â ½È¾î¿ä-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì§ìˆ˜ëŠ” ì‹«ì–´ìš”-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int count = 0;
 		if (n % 2 == 0) {
 			count = n / 2;

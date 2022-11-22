@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class DuplicateNumber {
 
 	public int solution(int[] array, int n) {
-		// Áßº¹µÈ ¼ıÀÚ °³¼ö ±¸ÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì¤‘ë³µëœ ìˆ«ì ê°œìˆ˜ êµ¬í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int answer = 0;
 
 		for (int i = 0; i < array.length; i++) {
@@ -16,10 +16,10 @@ public class DuplicateNumber {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		DuplicateNumber test = new DuplicateNumber();
 		int[] array = { 1, 3, 5, 3, 7, 2, 11 };
-		System.out.println("¹è¿­ ³» 3ÀÇ °³¼ö: " + test.solution(array, 3));
+		System.out.println("ë°°ì—´ ë‚´ 3ì˜ ê°œìˆ˜: " + test.solution(array, 3));
 
 	}
 }

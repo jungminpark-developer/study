@@ -3,21 +3,21 @@ package codingtest.lv1;
 public class SequenceNumber {
 
 	public long[] solution(int x, int n) {
-		// x¸¸Å­ °£°İÀÌ ÀÖ´Â n°³ÀÇ ¼ıÀÚ-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
-		// 0Àº ÀÚ¿¬¼ö°¡ ¾Æ´Ô, Á¤¼ö´Â 0À» Æ÷ÇÔÇÑ ¸ğµç ÀÚ¿¬¼ö
+		// xë§Œí¼ ê°„ê²©ì´ ìˆëŠ” nê°œì˜ ìˆ«ì-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
+		// 0ì€ ìì—°ìˆ˜ê°€ ì•„ë‹˜, ì •ìˆ˜ëŠ” 0ì„ í¬í•¨í•œ ëª¨ë“  ìì—°ìˆ˜
 		long[] answer = new long[n];
 
 		for (int i = 0; i < answer.length; i++) {
 			answer[i] = x * (i + 1L);
-			// 1ÀÏ¶© 85Á¡À¸·Î ºÒÇÕ°İ. x¿Í nÀÇ ¼ıÀÚ°¡ Ä¿Áö°Ô µÇ¸é intÀÇ ¹üÀ§¸¦ ¹ş¾î³ª±â ¶§¹®
-			// ÇÁ·Î±×·¡¸Ó½º hyungseon88´ÔÀÇ ´äº¯
+			// 1ì¼ë• 85ì ìœ¼ë¡œ ë¶ˆí•©ê²©. xì™€ nì˜ ìˆ«ìê°€ ì»¤ì§€ê²Œ ë˜ë©´ intì˜ ë²”ìœ„ë¥¼ ë²—ì–´ë‚˜ê¸° ë•Œë¬¸
+			// í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ hyungseon88ë‹˜ì˜ ë‹µë³€
 		}
 
 		return answer;
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		SequenceNumber test = new SequenceNumber();
 		long[] array = test.solution(10000000, 1000);
 

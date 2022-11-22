@@ -3,7 +3,7 @@ package codingtest.lv1;
 public class CoverString {
 
 	public String solution(String phone_number) {
-		// ÇÚµåÆù ¹øÈ£ °¡¸®±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// í•¸ë“œí° ë²ˆí˜¸ ê°€ë¦¬ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		String answer = "";
 		String asterisk = "";
 		for (int i = 0; i < phone_number.length() - 4; i++) {
@@ -15,7 +15,7 @@ public class CoverString {
 		return answer;
 
 		/*
-		 * //´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌ º¸°í Ãß°¡ °øºÎ String answer = "";
+		 * //ë‹¤ë¥¸ ì‚¬ëŒì˜ í’€ì´ ë³´ê³  ì¶”ê°€ ê³µë¶€ String answer = "";
 		 * 
 		 * for(int i=0; i < phone_number.length()-4; i++) { answer += "*"; }
 		 * 
@@ -26,7 +26,7 @@ public class CoverString {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		CoverString test = new CoverString();
 		System.out.print(test.solution("027778888"));
 

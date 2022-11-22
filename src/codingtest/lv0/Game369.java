@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class Game369 {
 
 	public int solution(int order) {
-		// 369°ÔÀÓ-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// 369ê²Œìž„-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int answer = 0;
 		String number = String.valueOf(order);
 

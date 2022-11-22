@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class TriangleSidesRetry {
 
 	public int solution(int[] sides) {
-		// »ï°¢ÇüÀÇ ¿Ï¼º Á¶°Ç(Á¤·Ä API »ç¿ë)-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì‚¼ê°í˜•ì˜ ì™„ì„± ì¡°ê±´(ì •ë ¬ API ì‚¬ìš©)-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		Arrays.sort(sides);
 
 		if (sides[2] < sides[0] + sides[1]) {
@@ -16,7 +16,7 @@ public class TriangleSidesRetry {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		TriangleSidesRetry test = new TriangleSidesRetry();
 		int[] tryAngle = { 7, 3, 3 };
 		System.out.println(test.solution(tryAngle));

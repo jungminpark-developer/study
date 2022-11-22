@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class StringRepeat {
 
 	public String solution(String my_string, int n) {
-		// ¹®ÀÚ ¹İº¹ Ãâ·ÂÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ë¬¸ì ë°˜ë³µ ì¶œë ¥í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		// 1. split
 		String[] array = my_string.split("");
 		String answer = "";
@@ -15,7 +15,7 @@ public class StringRepeat {
 		}
 
 		/*
-		 * 2. ´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌ º¸°í charAtÀ¸·Î Ç®ÀÌ for(int i=0; i<my_string.length(); i++) { for(int
+		 * 2. ë‹¤ë¥¸ ì‚¬ëŒì˜ í’€ì´ ë³´ê³  charAtìœ¼ë¡œ í’€ì´ for(int i=0; i<my_string.length(); i++) { for(int
 		 * j=0; j<n; j++) { answer += my_string.charAt(i); } }
 		 */
 
@@ -23,11 +23,11 @@ public class StringRepeat {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		StringRepeat test = new StringRepeat();
 		System.out.println(test.solution("Jpark", 2));
 
-		// ½ÇÇè½Ç
+		// ì‹¤í—˜ì‹¤
 		System.out.println("---------------------");
 		String test2 = "k";
 		System.out.println(test2.replace(test2, test2 + test2 + test2));

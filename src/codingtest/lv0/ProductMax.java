@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class ProductMax {
 
 	public int solution2(int[] numbers) {
-		// ÃÖ´ñ°ª ¸¸µé±â(1)-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è-ÀÌÁß for¹® ¼º°ø
+		// ìµœëŒ“ê°’ ë§Œë“¤ê¸°(1)-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„-ì´ì¤‘ forë¬¸ ì„±ê³µ
 		int max = 0;
 
 		for (int i = 0; i < numbers.length - 1; i++) {
@@ -18,8 +18,8 @@ public class ProductMax {
 	}
 
 	public int solution(int[] numbers) {
-		// Ã¹ ½Ãµµ incomplete-ÀÌÀ¯:Áßº¹µÈ ¼ıÀÚ°¡ ³ª¿Ã °æ¿ì ÇØ´ç ¼ıÀÚ°¡ ¹èÁ¦µÇ±â ¶§¹®
-		System.out.println("Ã¤Á¡¿¡¼­ ÇÏ³ª Æ²¸° »óÅÂ¤Ñ¤Ñ");
+		// ì²« ì‹œë„ incomplete-ì´ìœ :ì¤‘ë³µëœ ìˆ«ìê°€ ë‚˜ì˜¬ ê²½ìš° í•´ë‹¹ ìˆ«ìê°€ ë°°ì œë˜ê¸° ë•Œë¬¸
+		System.out.println("ì±„ì ì—ì„œ í•˜ë‚˜ í‹€ë¦° ìƒíƒœã…¡ã…¡");
 		int max1 = 0;
 		int max2 = 0;
 
@@ -39,7 +39,7 @@ public class ProductMax {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		ProductMax test = new ProductMax();
 		int[] array = { 5, 5, 3, 2, 1 };
 

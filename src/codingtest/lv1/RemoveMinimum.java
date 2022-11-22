@@ -3,22 +3,22 @@ package codingtest.lv1;
 public class RemoveMinimum {
 
 	public int[] solution(int[] arr) {
-		// Á¦ÀÏ ÀÛÀº ¼ö Á¦°ÅÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ì œì¼ ì‘ì€ ìˆ˜ ì œê±°í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 
 		int[] answer;
 		int temp = 0;
 		int min = arr[0];
 		int i;
 
-		// ÀÔ·Â¹ŞÀº ¹è¿­ÀÇ ±æÀÌ°¡ 1ÀÌ¶ó¸é -1 ÀÔ·Â ÈÄ Á¾·á
+		// ì…ë ¥ë°›ì€ ë°°ì—´ì˜ ê¸¸ì´ê°€ 1ì´ë¼ë©´ -1 ì…ë ¥ í›„ ì¢…ë£Œ
 		if (arr.length == 1) {
 			arr[0] = -1;
 			return arr;
 
-			// ¾Æ´Ï¶ó¸é Á¦ÀÏ ÀÛÀº ¼ö Á¦°ÅÇÏ°í Á¾·á
+			// ì•„ë‹ˆë¼ë©´ ì œì¼ ì‘ì€ ìˆ˜ ì œê±°í•˜ê³  ì¢…ë£Œ
 		} else {
 
-			// ¹è¿­ Å½»ö ÈÄ ÃÖ¼Ò°ª ±¸ÇÏ±â
+			// ë°°ì—´ íƒìƒ‰ í›„ ìµœì†Œê°’ êµ¬í•˜ê¸°
 			for (i = 0; i < arr.length; i++) {
 				if (min > arr[i]) {
 					min = arr[i];
@@ -28,18 +28,18 @@ public class RemoveMinimum {
 
 			answer = new int[arr.length - 1];
 
-			// ÃÖ¼Ò°ª ÀÚ¸®ºÎÅÍ ¶¯±â±â
+			// ìµœì†Œê°’ ìë¦¬ë¶€í„° ë•¡ê¸°ê¸°
 			for (i = temp; i < arr.length - 1; i++) {
 				arr[i] = arr[i + 1];
 			}
 
-			// ¹è¿­ ¿Å°Ü´ã±â
+			// ë°°ì—´ ì˜®ê²¨ë‹´ê¸°
 			for (i = 0; i < answer.length; i++) {
 				answer[i] = arr[i];
 				System.out.println(answer[i]);
 			}
 
-		} // else¹® Á¾·á
+		} // elseë¬¸ ì¢…ë£Œ
 		return answer;
 	}
 }

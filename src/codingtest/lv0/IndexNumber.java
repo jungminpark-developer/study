@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class IndexNumber {
 
 	public int solution(int num, int k) {
-		// ¼ıÀÚ Ã£±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ìˆ«ì ì°¾ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		String number = String.valueOf(num);
 		String searchNumber = String.valueOf(k);
 
@@ -16,9 +16,8 @@ public class IndexNumber {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		IndexNumber test = new IndexNumber();
 		System.out.println(test.solution(29183, 1));
 	}
-
 }

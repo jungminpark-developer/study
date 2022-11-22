@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class RockPaperScissors {
 
 	public String solution(String rsp) {
-		// °¡À§¹ÙÀ§º¸-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ê°€ìœ„ë°”ìœ„ë³´-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		String answer = "";
 
 		for (int i = 0; i < rsp.length(); i++) {
@@ -24,9 +24,8 @@ public class RockPaperScissors {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		RockPaperScissors test = new RockPaperScissors();
 		System.out.println(test.solution("205"));
 	}
-
 }

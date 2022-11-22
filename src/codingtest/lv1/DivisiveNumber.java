@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class DivisiveNumber {
 
 	public int[] solution(int[] arr, int divisor) {
-		// ³ª´©¾î ¶³¾îÁö´Â ¼ıÀÚ ¹è¿­-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ìˆ«ì ë°°ì—´-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		int count = 0;
 
 		for (int i = 0; i < arr.length; i++) {
@@ -21,7 +21,7 @@ public class DivisiveNumber {
 
 		int[] answer = new int[count];
 
-		count = 0; // ÀÎµ¦½º·Î ¾²±âÀ§ÇØ ÃÊ±âÈ­
+		count = 0; // ì¸ë±ìŠ¤ë¡œ ì“°ê¸°ìœ„í•´ ì´ˆê¸°í™”
 
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] % divisor == 0) {

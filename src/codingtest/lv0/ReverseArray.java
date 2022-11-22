@@ -1,10 +1,10 @@
 package codingtest.lv0;
 
-public class ArrayFilp {
+public class ReverseArray {
 
 	public int[] solution(int[] num_list) {
-		// ¹è¿­ µÚÁı±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
-		// Ã¹ Ç®ÀÌ
+		// ë°°ì—´ ë’¤ì§‘ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
+		// ì²« í’€ì´
 		int[] answer = new int[num_list.length];
 		int j = 0;
 
@@ -16,7 +16,7 @@ public class ArrayFilp {
 		return answer;
 
 		/*
-		 * ´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌº¸°í Ãß°¡ °øºÎ int[] answer = new int[num_list.length];
+		 * ë‹¤ë¥¸ ì‚¬ëŒì˜ í’€ì´ë³´ê³  ì¶”ê°€ ê³µë¶€ int[] answer = new int[num_list.length];
 		 * 
 		 * for(int i=0; i<num_list.length; i++) {answer[i] =
 		 * num_list[num_list.length-i-1]; } return answer;

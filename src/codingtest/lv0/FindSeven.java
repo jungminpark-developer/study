@@ -3,12 +3,12 @@ package codingtest.lv0;
 public class FindSeven {
 
 	public int solution(int[] array) {
-		// 7ÀÇ °³¼ö-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// 7ì˜ ê°œìˆ˜-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int answer = 0;
 
 		for (int i = 0; i < array.length; i++) {
-			int divisorNumber = 10; // ³ª´©´Â ¼ö, Á¦¼ö
-			int remainder = 7; // ³ª¸ÓÁö
+			int divisorNumber = 10; // ë‚˜ëˆ„ëŠ” ìˆ˜, ì œìˆ˜
+			int remainder = 7; // ë‚˜ë¨¸ì§€
 
 			while (array[i] * 10 >= divisorNumber) {
 				if (array[i] % divisorNumber == remainder) {
@@ -24,7 +24,7 @@ public class FindSeven {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		FindSeven test = new FindSeven();
 		int[] array2 = { 700, 707, 17 };
 		System.out.println(test.solution(array2));

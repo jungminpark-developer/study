@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class GetDiscountRate {
 
 	public int solution(int price) {
-		// ¿Ê °¡°Ô ÇÒÀÎ ¹Ş±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì˜· ê°€ê²Œ í• ì¸ ë°›ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		double sale;
 		double result;
 

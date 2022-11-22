@@ -3,13 +3,13 @@ package codingtest.lv1;
 public class FlipNaturalWater {
 
 	public int[] solution(long n) {
-		// ÀÚ¿¬¼ö µÚÁı¾î ¹è¿­·Î ¸¸µé±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ìì—°ìˆ˜ ë’¤ì§‘ì–´ ë°°ì—´ë¡œ ë§Œë“¤ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 
-		String length = "" + n; // String¿¡ n Ãß°¡
-		int[] answer = new int[length.length()]; // StringÀÇ ±ÛÀÚ¼ö ±æÀÌÀÇ ¹è¿­ »ı¼º
+		String length = "" + n; // Stringì— n ì¶”ê°€
+		int[] answer = new int[length.length()]; // Stringì˜ ê¸€ììˆ˜ ê¸¸ì´ì˜ ë°°ì—´ ìƒì„±
 
 		for (int i = 0; i < answer.length; i++) {
-			answer[i] = (int) (n % 10); // (int) n % 10 Àº ½ÇÆĞ-°øºÎÇÏ±â
+			answer[i] = (int) (n % 10); // (int) n % 10 ì€ ì‹¤íŒ¨-ê³µë¶€í•˜ê¸°
 			n /= 10;
 		}
 

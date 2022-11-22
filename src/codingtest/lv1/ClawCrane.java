@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 class ClawCrane {
 	public int solution(int[][] board, int[] moves) {
-		// 크레인 인형뽑기 게임-프로그래머스 0단계
+		// 크레인 인형뽑기 게임-프로그래머스 1단계
 		ArrayList<Integer> stack = new ArrayList<>();
 		int count = 0; // 사라진 인형 카운트
 

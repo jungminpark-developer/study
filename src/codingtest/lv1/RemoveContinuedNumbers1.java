@@ -3,14 +3,14 @@ package codingtest.lv1;
 public class RemoveContinuedNumbers1 {
 
 	public int[] solution(int[] arr) {
-		// °°Àº ¼ıÀÚ´Â ½È¾î-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ê°™ì€ ìˆ«ìëŠ” ì‹«ì–´-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		/*
-		 * Ã¹ ¹øÂ° ½Ãµµ-È¿À²¼º 0Á¡ ÀÌÀ¯ ÃßÃø: String¿¡¼­ int·Î º¯È¯ÇÏ´Â ±× ¾îµò°¡¿¡¼­?
+		 * ì²« ë²ˆì§¸ ì‹œë„-íš¨ìœ¨ì„± 0ì  ì´ìœ  ì¶”ì¸¡: Stringì—ì„œ intë¡œ ë³€í™˜í•˜ëŠ” ê·¸ ì–´ë”˜ê°€ì—ì„œ?
 		 */
 
-		// ¹è¿­ÀÇ Ã¹ ¹øÂ° °ªÀ¸·Î ÃÊ±âÈ­
-		int tempNumber = arr[0]; // ÃÖ±Ù µ¥ÀÌÅÍ¸¦ ÀúÀåÇÏ¿© ºñ±³
-		String result = "" + arr[0]; // ¿¬¼ÓÀûÀ¸·Î ³ªÅ¸³ª´Â ¼ıÀÚ´Â ÇÏ³ª¸¸ ³²±â°í ±× ¼ıÀÚµéÀ» ÀúÀåÇÒ °ø°£
+		// ë°°ì—´ì˜ ì²« ë²ˆì§¸ ê°’ìœ¼ë¡œ ì´ˆê¸°í™”
+		int tempNumber = arr[0]; // ìµœê·¼ ë°ì´í„°ë¥¼ ì €ì¥í•˜ì—¬ ë¹„êµ
+		String result = "" + arr[0]; // ì—°ì†ì ìœ¼ë¡œ ë‚˜íƒ€ë‚˜ëŠ” ìˆ«ìëŠ” í•˜ë‚˜ë§Œ ë‚¨ê¸°ê³  ê·¸ ìˆ«ìë“¤ì„ ì €ì¥í•  ê³µê°„
 
 		for (int i = 1; i < arr.length; i++) {
 			if (tempNumber == arr[i]) {
@@ -21,11 +21,11 @@ public class RemoveContinuedNumbers1 {
 			}
 		}
 
-		// ¹è¿­ ¼±¾ğ
-		String[] temp = result.split(""); // ÇÑ ±ÛÀÚ¾¿ ºĞ¸®
+		// ë°°ì—´ ì„ ì–¸
+		String[] temp = result.split(""); // í•œ ê¸€ìì”© ë¶„ë¦¬
 		int[] answer = new int[result.length()];
 
-		// int·Î º¯È¯ÇÏ¿© ÃÖÁ¾ ÀúÀå
+		// intë¡œ ë³€í™˜í•˜ì—¬ ìµœì¢… ì €ì¥
 		for (int i = 0; i < answer.length; i++) {
 			answer[i] = Integer.parseInt(temp[i]);
 		}
@@ -34,7 +34,7 @@ public class RemoveContinuedNumbers1 {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		RemoveContinuedNumbers1 test = new RemoveContinuedNumbers1();
 		int[] Array = { 1, 1, 3, 3, 0, 1, 1 };
 		System.out.println(test.solution(Array));

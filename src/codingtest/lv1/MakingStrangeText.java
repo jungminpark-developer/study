@@ -3,12 +3,12 @@ package codingtest.lv1;
 public class MakingStrangeText {
 
 	public String solution(String s) {
-		// ÀÌ»óÇÑ ¹®ÀÚ ¸¸µé±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è-¸Å¿ì º¹ÀâÇÏ°Ô Ç®¾ú´Ù.
+		// ì´ìƒí•œ ë¬¸ì ë§Œë“¤ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„-ë§¤ìš° ë³µì¡í•˜ê²Œ í’€ì—ˆë‹¤.
 		String answer = "";
 		boolean even = true;
 
 		for (int i = 0; i < s.length(); i++) {
-			// i¹øÂ° ÀÎµ¦½ºÀÇ ±ÛÀÚ°¡ °ø¹éÀÏ °æ¿ì
+			// ië²ˆì§¸ ì¸ë±ìŠ¤ì˜ ê¸€ìê°€ ê³µë°±ì¼ ê²½ìš°
 			if (s.charAt(i) == 32) {
 				even = true;
 				answer += s.charAt(i);
@@ -16,14 +16,14 @@ public class MakingStrangeText {
 			}
 
 			if (even) {
-				// Â¦¼ö ÀÎµ¦½ºÀÇ ±ÛÀÚ°¡ ¼Ò¹®ÀÚ°¡ ¾Æ´Ò °æ¿ì(´ë¹®ÀÚÀÏ °æ¿ì)
+				// ì§ìˆ˜ ì¸ë±ìŠ¤ì˜ ê¸€ìê°€ ì†Œë¬¸ìê°€ ì•„ë‹ ê²½ìš°(ëŒ€ë¬¸ìì¼ ê²½ìš°)
 				if (s.charAt(i) < 97) {
 					answer += s.charAt(i);
 				} else {
 					answer += (char) (s.charAt(i) - 32);
 				}
 			} else {
-				// È¦¼ö ÀÎµ¦½ºÀÇ ±ÛÀÚ°¡ ¼Ò¹®ÀÚ°¡ ¾Æ´Ò °æ¿ì(´ë¹®ÀÚÀÏ °æ¿ì)
+				// í™€ìˆ˜ ì¸ë±ìŠ¤ì˜ ê¸€ìê°€ ì†Œë¬¸ìê°€ ì•„ë‹ ê²½ìš°(ëŒ€ë¬¸ìì¼ ê²½ìš°)
 				if (s.charAt(i) < 97) {
 					answer += (char) (s.charAt(i) + 32);
 				} else {
@@ -38,7 +38,7 @@ public class MakingStrangeText {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		MakingStrangeText test = new MakingStrangeText();
 		System.out.println(test.solution("  tRy hello  WORLD    "));
 	}

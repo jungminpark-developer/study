@@ -6,18 +6,18 @@ import java.util.Collections;
 public class InsertionSort {
 
 	public long solution(long n) {
-		// Á¤¼ö ³»¸²Â÷¼øÀ¸·Î ¹èÄ¡ÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ì •ìˆ˜ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ë°°ì¹˜í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		ArrayList<Long> array = new ArrayList<>();
 		long answer = 0;
 
-		// ÀÚ¸®¼ö ºĞ¸®
+		// ìë¦¬ìˆ˜ ë¶„ë¦¬
 		while (n > 0) {
 			array.add(n % 10);
 			n = n / 10;
 		}
 
-		// »ğÀÔ Á¤·Ä·Î ¿À¸§Â÷¼ø Á¤·Ä
-		for (int i = 1; i < array.size(); i++) { // µÎ ¹øÂ°ÀÎ 1¹ø ÀÎµ¦½ººÎÅÍ ºñ±³
+		// ì‚½ì… ì •ë ¬ë¡œ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+		for (int i = 1; i < array.size(); i++) { // ë‘ ë²ˆì§¸ì¸ 1ë²ˆ ì¸ë±ìŠ¤ë¶€í„° ë¹„êµ
 			for (int j = i; j > 0; j--) {
 				if (array.get(j - 1) > array.get(j)) {
 					Collections.swap(array, j, j - 1);
@@ -25,7 +25,7 @@ public class InsertionSort {
 			}
 		}
 
-		// ÀÚ¸´¼ö¸¦ °öÇØ¼­ ÃÖÁ¾°ª ¸¸µé±â
+		// ìë¦¿ìˆ˜ë¥¼ ê³±í•´ì„œ ìµœì¢…ê°’ ë§Œë“¤ê¸°
 		int timesNumber = 1;
 		for (int i = 0; i < array.size(); i++) {
 			answer += array.get(i) * timesNumber;
@@ -36,25 +36,23 @@ public class InsertionSort {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		InsertionSort test = new InsertionSort();
 		test.solution(546271);
-		
-String answer = "";
-String s=" try hello world";
+
+		String answer = "";
+		String s = " try hello world";
 
 		char a = 32;
-		System.out.println("°ø¹é =" + a);
-	
-        
-        for (int i=0; i<s.length(); i++) {
-             if (i % 2 == 0) {
-                 answer += s.charAt(i) - 32;
-             } else {
-                 answer += s.charAt(i);
-             }
-             
-             
-	}
+		System.out.println("ê³µë°± =" + a);
+
+		for (int i = 0; i < s.length(); i++) {
+			if (i % 2 == 0) {
+				answer += s.charAt(i) - 32;
+			} else {
+				answer += s.charAt(i);
+			}
+
+		}
 	}
 }

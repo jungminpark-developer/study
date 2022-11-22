@@ -3,8 +3,8 @@ package codingtest.lv0;
 public class GetCommondivisor {
 
 	public int[] solution(int n) {
-		// ¾à¼ö ±¸ÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
-		int count; // ¹è¿­ ±æÀÌ
+		// ì•½ìˆ˜ êµ¬í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
+		int count; // ë°°ì—´ ê¸¸ì´
 
 		if (n == 1) {
 			count = 1;
@@ -12,7 +12,7 @@ public class GetCommondivisor {
 			count = 2;
 		}
 
-		// ±æÀÌ ±¸ÇÏ±â
+		// ê¸¸ì´ êµ¬í•˜ê¸°
 		for (int i = 2, tempN = n; i < tempN; i++) {
 			if (n % i == 0) {
 				if ((n / i) == i) {
@@ -24,7 +24,7 @@ public class GetCommondivisor {
 			}
 		}
 
-		// °ª ³Ö±â
+		// ê°’ ë„£ê¸°
 		int[] answer = new int[count];
 		for (int i = 1, j = 0; i <= n; i++) {
 			if (n % i == 0) {
@@ -37,11 +37,11 @@ public class GetCommondivisor {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		GetCommondivisor test = new GetCommondivisor();
 		int[] array = test.solution(25);
 
-		// Ãâ·Â È®ÀÎ
+		// ì¶œë ¥ í™•ì¸
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
 		}

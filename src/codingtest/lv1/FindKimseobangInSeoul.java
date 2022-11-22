@@ -1,9 +1,9 @@
 package codingtest.lv1;
 
-public class FindingKimSeobangInSeoul {
+public class FindKimseobangInSeoul {
 
 	public String solution(String[] seoul) {
-		// ¼­¿ï¿¡¼­ ±è¼­¹æ Ã£±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ì„œìš¸ì—ì„œ ê¹€ì„œë°© ì°¾ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		String x = "";
 
 		for (int i = 0; i < seoul.length; i++) {
@@ -13,12 +13,12 @@ public class FindingKimSeobangInSeoul {
 			}
 		}
 
-		return "±è¼­¹æÀº " + x + "¿¡ ÀÖ´Ù";
+		return "ê¹€ì„œë°©ì€ " + x + "ì— ìˆë‹¤";
 	}
 
 	public static void main(String[] args) {
-		// È®ÀÎ
-		FindingKimSeobangInSeoul s1 = new FindingKimSeobangInSeoul();
+		// í™•ì¸
+		FindKimseobangInSeoul s1 = new FindKimseobangInSeoul();
 		String[] array = { "jane", "Jung", "Kim", "park" };
 		System.out.println(s1.solution(array));
 	}

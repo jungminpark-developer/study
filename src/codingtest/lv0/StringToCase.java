@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class StringToCase {
 
 	public String solution(String my_string) {
-		// ´ë¹®ÀÚ¿Í ¼Ò¹®ÀÚ-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ëŒ€ë¬¸ìì™€ ì†Œë¬¸ì-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		String answer = "";
 
 		for (int i = 0; i < my_string.length(); i++) {
@@ -17,7 +17,7 @@ public class StringToCase {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		StringToCase test = new StringToCase();
 		System.out.println(test.solution("abcABC"));
 

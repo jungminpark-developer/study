@@ -3,19 +3,19 @@ package codingtest.lv0;
 public class OddEven {
 
 	public int[] solution(int[] num_list) {
-		// Â¦¼ö È¦¼ö °³¼ö-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ì§ìˆ˜ í™€ìˆ˜ ê°œìˆ˜-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		int[] answer = new int[2];
 		int countEven = 0;
-		
-		for(int i=0; i<num_list.length; i++) {
-			if(num_list[i] % 2 == 0) {
+
+		for (int i = 0; i < num_list.length; i++) {
+			if (num_list[i] % 2 == 0) {
 				countEven++;
 			}
 		}
-		
+
 		answer[0] = countEven;
 		answer[1] = num_list.length - countEven;
-		
+
 		return answer;
 	}
 }

@@ -3,7 +3,7 @@ package codingtest.lv1;
 public class SearchForCharInAString {
 
 	boolean solution(String s) {
-		// ¹®ÀÚ¿­ ³»¿¡¼­ p¿Í yÀÇ °³¼ö Ã£±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ë¬¸ìì—´ ë‚´ì—ì„œ pì™€ yì˜ ê°œìˆ˜ ì°¾ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		s = s.toLowerCase();
 		int count = 0;
 
@@ -23,8 +23,8 @@ public class SearchForCharInAString {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà-p¿Í yÀÇ °³¼ö°¡ °°´Ù¸é true
+		// ì‹¤í–‰-pì™€ yì˜ ê°œìˆ˜ê°€ ê°™ë‹¤ë©´ true
 		SearchForCharInAString test = new SearchForCharInAString();
-		System.out.println(test.solution("pPolYyYmorphism")); // p¿Í y°³ 3°³¾¿
+		System.out.println(test.solution("pPolYyYmorphism")); // pì™€ yê°œ 3ê°œì”©
 	}
 }

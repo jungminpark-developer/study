@@ -3,7 +3,7 @@ package codingtest.lv0;
 public class ArrayAvg {
 
 	public double solution(int[] numbers) {
-		// ¹è¿­ÀÇ Æò±Õ°ª ±¸ÇÏ±â-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
+		// ë°°ì—´ì˜ í‰ê· ê°’ êµ¬í•˜ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
 		double answer = 0;
 		for (int i = 0; i < numbers.length; i++) {
 			answer += numbers[i];

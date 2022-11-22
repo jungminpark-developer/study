@@ -3,8 +3,8 @@ package codingtest.lv0;
 public class IndexOfTest {
 
 	public int solution(String str1, String str2) {
-		// ¹®ÀÚ¿­¾È¿¡ ¹®ÀÚ¿­-ÇÁ·Î±×·¡¸Ó½º 0´Ü°è
-		// Á¦Ãâ´ä¾È
+		// ë¬¸ìì—´ì•ˆì— ë¬¸ìì—´-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 0ë‹¨ê³„
+		// ì œì¶œë‹µì•ˆ
 		if (str1.indexOf(str2) != -1) {
 			return 1;
 		} else {
@@ -12,13 +12,13 @@ public class IndexOfTest {
 		}
 
 		/*
-		 * ´ä¾È º¸°í contains ¹ß°ß, °øºÎ ÈÄ ½Ãµµ if(str1.contains(str2)) { return 1; }else { return
+		 * ë‹µì•ˆ ë³´ê³  contains ë°œê²¬, ê³µë¶€ í›„ ì‹œë„ if(str1.contains(str2)) { return 1; }else { return
 		 * 2; }
 		 */
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		IndexOfTest test = new IndexOfTest();
 		System.out.println(test.solution("ab6CDE443fgh", "6CD"));
 		System.out.println(test.solution("ppprrrrogrammers", "pppp"));

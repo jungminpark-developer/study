@@ -3,23 +3,23 @@ package codingtest.lv1;
 public class RepeatLetters {
 
 	public String solution(int n) {
-		// ¼ö¹Ú¼ö¹Ú¼ö¹Ú¼ö¹Ú¼ö¹Ú¼ö?-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ìˆ˜ë°•ìˆ˜ë°•ìˆ˜ë°•ìˆ˜ë°•ìˆ˜ë°•ìˆ˜?-í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		String answer = "";
 		int repeat = n / 2;
 
 		for (int i = 0; i < repeat; i++) {
-			answer += "¼ö¹Ú";
+			answer += "ìˆ˜ë°•";
 		}
 
 		if (n % 2 != 0) {
-			answer += "¼ö";
+			answer += "ìˆ˜";
 		}
 
 		return answer;
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		RepeatLetters test = new RepeatLetters();
 		System.out.print(test.solution(3));
 

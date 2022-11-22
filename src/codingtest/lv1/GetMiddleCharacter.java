@@ -3,10 +3,10 @@ package codingtest.lv1;
 public class GetMiddleCharacter {
 
 	public String solution(String s) {
-		// °¡¿îµ¥ ±ÛÀÚ °¡Á®¿À±â-ÇÁ·Î±×·¡¸Ó½º 1´Ü°è
+		// ê°€ìš´ë° ê¸€ì ê°€ì ¸ì˜¤ê¸°-í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ 1ë‹¨ê³„
 		String answer = "";
 
-		if (s.length() % 2 == 1) { // ±ÛÀÚ¼ö°¡ È¦¼ö¶ó¸é
+		if (s.length() % 2 == 1) { // ê¸€ììˆ˜ê°€ í™€ìˆ˜ë¼ë©´
 			answer += s.charAt(s.length() / 2);
 		} else {
 			answer += s.substring(s.length() / 2 - 1, s.length() / 2 + 1);
@@ -16,7 +16,7 @@ public class GetMiddleCharacter {
 	}
 
 	public static void main(String[] args) {
-		// ½ÇÇà
+		// ì‹¤í–‰
 		GetMiddleCharacter test = new GetMiddleCharacter();
 		System.out.println(test.solution("abcd"));
 	}
